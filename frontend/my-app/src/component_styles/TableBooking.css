@@ -1,0 +1,72 @@
+.booking-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #0d2c26; /* Background color */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: #ffffff; /* Text color for better contrast */
+  }
+  
+  .booking-form {
+    border: 2px solid #f1dcae; /* Border color */
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color:#0f715d ; /* Inside form background for readability */
+  }
+  
+  .booking-form .form-control {
+    border: 1px solid #f1dcae; /* Border color for inputs */
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .booking-form .form-control:focus {
+    border-color: #f1dcae;
+    box-shadow: 0 0 5px #f1dcae;
+  }
+  
+  h2 {
+    color: #f1dcae; /* Header color */
+    text-align: center;
+  }
+  
+  button {
+    background-color: #f1dcae;
+    color: #0d2c26;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e0c8a0;
+    color: #0d2c26;
+  }
+  
+  .alert-success {
+    background-color: #f1dcae;
+    color: #0d2c26;
+    border: none;
+  }
+
+  .book_table_button{
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* White text */
+    border: 1px solid #b6a97a; /* Border with golden color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 17px; /* Spacing inside the button */
+    font-size: 13px; /* Text size */
+     /* Bold text */
+    text-transform: uppercase; /* Capitalize all letters */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+
+  .book_table_button:hover{
+    background-color: #b6a97a; /* Change background color on hover */
+    color: #002b20;
+  }
+  
+  

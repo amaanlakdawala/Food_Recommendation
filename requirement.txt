@@ -1,0 +1,16 @@
+django
+pillow
+djangorestframework
+npm install
+react-router-dom
+react-bootstrap bootstrap
+axios
+django-cors-headers
+@reduxjs/toolkit react-redux
+
+
+
+# imporvement make redux store to display menu itemws and search component items
+
+
+

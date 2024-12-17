@@ -1,0 +1,53 @@
+.footer {
+    background-color: #003D33; /* Background color */
+    color: #ffffff; /* Text color */
+    font-family: 'Cormorant', serif; /* Font family for elegant styling */
+    padding: 20px 0; /* Top and bottom padding */
+    text-align: center; /* Center-align the content */
+    position: relative; /* Position to align elements */
+  }
+  
+  
+  .footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer .footer-divider {
+    width: 80%; /* Divider width */
+    border-top: 1px solid #c49871 ; /* Thin white line */
+    margin: 10px auto; /* Center the divider */
+  }
+  
+  .footer .footer-social-links,
+  .footer .footer-rights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between items */
+    font-size: 0.9rem; /* Smaller font size for links */
+    text-transform: uppercase;
+  }
+  
+  .footer .footer-social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer .footer-social-links a:hover {
+    color: #c49871; /* Gold-like hover effect */
+  }
+  
+  .footer .footer-rights span {
+    margin: 0 5px; /* Adds spacing around the diamond separator */
+  }
+  
+  .footer .footer-rights span.diamond {
+    color: #c49871; /* Gold-like diamond color */
+  }
+  .diamond{
+    color: #c49871;
+  }

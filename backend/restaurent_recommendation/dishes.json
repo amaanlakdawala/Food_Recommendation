@@ -1,0 +1,857 @@
+[
+    {
+        "model": "recommendation.dishes",
+        "pk": 1,
+        "fields": {
+            "name": "Chicken Salad",
+            "ingredients": "Chicken, Lettuce, Olive Oil",
+            "calories": 200,
+            "protein": 25,
+            "fats": 10,
+            "carbs": 2,
+            "diet_type": "Keto",
+            "cuisine": "American",
+            "price": 8.99,
+            "description": "A fresh and healthy salad with tender chicken, crisp lettuce, and a light olive oil dressing.",
+            "meal_type": "Starter"
+        }
+    },
+    {
+        "model": "recommendation.dishes",
+        "pk": 2,
+        "fields": {
+            "name": "Grilled Salmon",
+            "ingredients": "Salmon, Lemon, Garlic",
+            "calories": 300,
+            "protein": 35,
+            "fats": 15,
+            "carbs": 0,
+            "diet_type": "Paleo",
+            "cuisine": "Mediterranean",
+            "price": 15.99,
+            "description": "Perfectly grilled salmon seasoned with lemon and garlic for a delightful Mediterranean flavor.",
+            "meal_type": "Main Course"
+        }
+    },
+    {
+        "model": "recommendation.dishes",
+        "pk": 3,
+        "fields": {
+            "name": "Vegan Buddha Bowl",
+            "ingredients": "Quinoa, Chickpeas, Avocado, Spinach",
+            "calories": 400,
+            "protein": 12,
+            "fats": 20,
+            "carbs": 35,
+            "diet_type": "Vegan",
+            "cuisine": "Fusion",
+            "price": 12.49,
+            "description": "A nourishing bowl filled with quinoa, chickpeas, creamy avocado, and fresh spinach.",
+            "meal_type": "Main Course"
+        }
+    },
+    {
+        "model": "recommendation.dishes",
+        "pk": 4,
+        "fields": {
+            "name": "Paneer Tikka",
+            "ingredients": "Paneer, Yogurt, Spices",
+            "calories": 250,
+            "protein": 20,
+            "fats": 15,
+            "carbs": 5,
+            "diet_type": "Vegetarian",
+            "cuisine": "Indian",
+            "price": 9.99,
+            "description": "Flavorful paneer marinated in spiced yogurt and grilled to perfection.",
+            "meal_type": "Main Course"
+        }
+    },
+    {
+        "model": "recommendation.dishes",
+        "pk": 5,
+        "fields": {
+            "name": "Camel Steak",
+            "ingredients": "Camel, Garlic, Butter",
+            "calories": 400,
+            "protein": 50,
+            "fats": 20,
+            "carbs": 0,
+            "diet_type": "High Protein",
+            "cuisine": "American",
+            "price": 18.99,
+            "description": "A hearty beef steak cooked with garlic and butter for a rich and savory experience.",
+            "meal_type": "Main Course"
+        }
+    },
+    {
+        "model": "recommendation.dishes",
+        "pk": 6,
+        "fields": {
+            "name": "Tofu Stir Fry",
+            "ingredients": "Tofu, Vegetables, Soy Sauce",
+            "calories": 300,
+            "protein": 15,
+            "fats": 10,
+            "carbs": 25,
+            "diet_type": "Vegan",
+            "cuisine": "Asian",
+            "price": 10.49,
+            "description": "A colorful stir fry of tofu and fresh vegetables with a savory soy sauce glaze.",
+            "meal_type": "Starter"
+        }
+    },
+    {
+        "model": "recommendation.dishes",
+        "pk": 7,
+        "fields": {
+            "name": "Eggplant Parmesan",
+            "ingredients": "Eggplant, Tomato Sauce, Cheese",
+            "calories": 350,
+            "protein": 15,
+            "fats": 20,
+            "carbs": 25,
+            "diet_type": "Vegetarian",
+            "cuisine": "Italian",
+            "price": 11.99,
+            "description": "Layers of eggplant, tangy tomato sauce, and melted cheese baked to perfection.",
+            "meal_type": "Main Course"
+        }
+    },
+    {
+        "model": "recommendation.dishes",
+        "pk": 8,
+        "fields": {
+            "name": "Cauliflower Rice",
+            "ingredients": "Cauliflower, Olive Oil, Garlic",
+            "calories": 150,
+            "protein": 5,
+            "fats": 10,
+            "carbs": 10,
+            "diet_type": "Keto",
+            "cuisine": "Fusion",
+            "price": 6.99,
+            "description": "A low-carb alternative made with finely grated cauliflower sautéed in olive oil and garlic.",
+            "meal_type": "Main Course"
+        }
+    },
+    {
+        "model": "recommendation.dishes",
+        "pk": 9,
+        "fields": {
+            "name": "Shrimp Tacos",
+            "ingredients": "Shrimp, Tortilla, Salsa, Avocado",
+            "calories": 300,
+            "protein": 20,
+            "fats": 15,
+            "carbs": 20,
+            "diet_type": "Pescatarian",
+            "cuisine": "Mexican",
+            "price": 13.99,
+            "description": "Fresh shrimp served in soft tortillas with salsa and creamy avocado.",
+            "meal_type": "Starter"
+        }
+    },
+    {
+        "model": "recommendation.dishes",
+        "pk": 10,
+        "fields": {
+            "name": "Lentil Soup",
+            "ingredients": "Lentils, Carrots, Onions, Spices",
+            "calories": 250,
+            "protein": 18,
+            "fats": 5,
+            "carbs": 35,
+            "diet_type": "Vegetarian",
+            "cuisine": "Middle Eastern",
+            "price": 7.49,
+            "description": "A hearty and flavorful soup made with lentils, fresh vegetables, and aromatic spices.",
+            "meal_type": "Starter"
+        }
+    },
+    
+        {
+            "model": "recommendation.dishes",
+            "pk": 11,
+            "fields": {
+                "name": "Miso Soup",
+                "ingredients": "Miso Paste, Tofu, Seaweed, Scallions",
+                "calories": 90,
+                "protein": 8,
+                "fats": 3,
+                "carbs": 8,
+                "diet_type": "Vegan",
+                "cuisine": "Japanese",
+                "price": 5.99,
+                "description": "A light and flavorful Japanese soup with miso and tofu.",
+                "meal_type": "Starter"
+            }
+        },
+        {
+            "model": "recommendation.dishes",
+            "pk": 12,
+            "fields": {
+                "name": "Greek Salad",
+                "ingredients": "Lettuce, Feta, Olives, Cucumber, Tomato",
+                "calories": 150,
+                "protein": 6,
+                "fats": 10,
+                "carbs": 5,
+                "diet_type": "Vegetarian",
+                "cuisine": "Mediterranean",
+                "price": 7.49,
+                "description": "A fresh and tangy salad with feta cheese and olives.",
+                "meal_type": "Starter"
+            }
+        },
+        {
+            "model": "recommendation.dishes",
+            "pk": 13,
+            "fields": {
+                "name": "Teriyaki Chicken",
+                "ingredients": "Chicken, Teriyaki Sauce, Sesame Seeds",
+                "calories": 320,
+                "protein": 25,
+                "fats": 8,
+                "carbs": 30,
+                "diet_type": "Classic",
+                "cuisine": "Asian",
+                "price": 13.99,
+                "description": "Tender chicken glazed with a sweet and savory teriyaki sauce.",
+                "meal_type": "Main Course"
+            }
+        },
+        {
+            "model": "recommendation.dishes",
+            "pk": 14,
+            "fields": {
+                "name": "Falafel Wrap",
+                "ingredients": "Falafel, Tortilla, Lettuce, Tahini Sauce",
+                "calories": 350,
+                "protein": 12,
+                "fats": 15,
+                "carbs": 40,
+                "diet_type": "Vegan",
+                "cuisine": "Middle Eastern",
+                "price": 9.99,
+                "description": "A hearty wrap filled with crispy falafel and fresh veggies.",
+                "meal_type": "Main Course"
+            }
+        },
+        {
+            "model": "recommendation.dishes",
+            "pk": 15,
+            "fields": {
+                "name": "Seafood Paella",
+                "ingredients": "Rice, Shrimp, Mussels, Peas, Saffron",
+                "calories": 400,
+                "protein": 30,
+                "fats": 10,
+                "carbs": 50,
+                "diet_type": "Pescatarian",
+                "cuisine": "Spanish",
+                "price": 19.99,
+                "description": "A traditional Spanish rice dish with seafood and aromatic spices.",
+                "meal_type": "Main Course"
+            }
+        },
+        {
+            "model": "recommendation.dishes",
+            "pk": 16,
+            "fields": {
+                "name": "Pumpkin Soup",
+                "ingredients": "Pumpkin, Cream, Onion, Spices",
+                "calories": 180,
+                "protein": 5,
+                "fats": 8,
+                "carbs": 20,
+                "diet_type": "Vegetarian",
+                "cuisine": "American",
+                "price": 6.99,
+                "description": "A creamy and warm soup made with fresh pumpkin and spices.",
+                "meal_type": "Starter"
+            }
+        },
+        {
+            "model": "recommendation.dishes",
+            "pk": 17,
+            "fields": {
+                "name": "Chicken Shawarma",
+                "ingredients": "Chicken, Pita, Garlic Sauce, Pickles",
+                "calories": 500,
+                "protein": 35,
+                "fats": 15,
+                "carbs": 45,
+                "diet_type": "Classic",
+                "cuisine": "Middle Eastern",
+                "price": 14.99,
+                "description": "Juicy chicken served in a warm pita with garlic sauce and pickles.",
+                "meal_type": "Main Course"
+            }
+        },
+        {
+            "model": "recommendation.dishes",
+            "pk": 18,
+            "fields": {
+                "name": "Caprese Salad",
+                "ingredients": "Tomatoes, Mozzarella, Basil, Olive Oil",
+                "calories": 220,
+                "protein": 8,
+                "fats": 18,
+                "carbs": 6,
+                "diet_type": "Vegetarian",
+                "cuisine": "Italian",
+                "price": 8.99,
+                "description": "A refreshing salad with ripe tomatoes, fresh mozzarella, and basil.",
+                "meal_type": "Starter"
+            }
+        },
+        {
+            "model": "recommendation.dishes",
+            "pk": 19,
+            "fields": {
+                "name": "Beef Stroganoff",
+                "ingredients": "Beef, Mushrooms, Cream Sauce, Pasta",
+                "calories": 480,
+                "protein": 28,
+                "fats": 22,
+                "carbs": 40,
+                "diet_type": "Classic",
+                "cuisine": "Russian",
+                "price": 16.99,
+                "description": "A creamy pasta dish with tender beef and mushrooms.",
+                "meal_type": "Main Course"
+            }
+        },
+        {
+            "model": "recommendation.dishes",
+            "pk": 20,
+            "fields": {
+                "name": "Vegetable Spring Rolls",
+                "ingredients": "Vegetables, Rice Paper, Dipping Sauce",
+                "calories": 150,
+                "protein": 3,
+                "fats": 5,
+                "carbs": 25,
+                "diet_type": "Vegan",
+                "cuisine": "Asian",
+                "price": 7.49,
+                "description": "Crispy spring rolls filled with fresh vegetables, served with a tangy dipping sauce.",
+                "meal_type": "Starter"
+            }
+        },
+        
+            {
+                "model": "recommendation.dishes",
+                "pk": 21,
+                "fields": {
+                    "name": "Mango Smoothie",
+                    "ingredients": "Mango, Yogurt, Honey",
+                    "calories": 150,
+                    "protein": 4,
+                    "fats": 3,
+                    "carbs": 30,
+                    "diet_type": "Vegetarian",
+                    "cuisine": "Fusion",
+                    "price": 5.99,
+                    "description": "A refreshing mango smoothie sweetened with honey.",
+                    "meal_type": "Drink"
+                }
+            },
+            {
+                "model": "recommendation.dishes",
+                "pk": 22,
+                "fields": {
+                    "name": "Iced Latte",
+                    "ingredients": "Espresso, Milk, Ice",
+                    "calories": 100,
+                    "protein": 3,
+                    "fats": 2,
+                    "carbs": 15,
+                    "diet_type": "Vegetarian",
+                    "cuisine": "American",
+                    "price": 4.49,
+                    "description": "A cold and creamy iced latte, perfect for summer.",
+                    "meal_type": "Drink"
+                }
+            },
+            {
+                "model": "recommendation.dishes",
+                "pk": 23,
+                "fields": {
+                    "name": "Strawberry Milkshake",
+                    "ingredients": "Strawberries, Milk, Ice Cream",
+                    "calories": 250,
+                    "protein": 6,
+                    "fats": 10,
+                    "carbs": 35,
+                    "diet_type": "Vegetarian",
+                    "cuisine": "American",
+                    "price": 5.99,
+                    "description": "A rich and creamy strawberry milkshake.",
+                    "meal_type": "Drink"
+                }
+            },
+            {
+                "model": "recommendation.dishes",
+                "pk": 24,
+                "fields": {
+                    "name": "Green Tea",
+                    "ingredients": "Green Tea Leaves, Water",
+                    "calories": 0,
+                    "protein": 0,
+                    "fats": 0,
+                    "carbs": 0,
+                    "diet_type": "Vegan",
+                    "cuisine": "Asian",
+                    "price": 2.99,
+                    "description": "A soothing cup of green tea.",
+                    "meal_type": "Drink"
+                }
+            },
+            {
+                "model": "recommendation.dishes",
+                "pk": 25,
+                "fields": {
+                    "name": "Chocolate Frappe",
+                    "ingredients": "Chocolate Syrup, Milk, Coffee, Ice",
+                    "calories": 300,
+                    "protein": 5,
+                    "fats": 8,
+                    "carbs": 50,
+                    "diet_type": "Vegetarian",
+                    "cuisine": "American",
+                    "price": 6.49,
+                    "description": "A sweet and indulgent chocolate frappe.",
+                    "meal_type": "Drink"
+                }
+            },
+            {
+                "model": "recommendation.dishes",
+                "pk": 26,
+                "fields": {
+                    "name": "Lemon Iced Tea",
+                    "ingredients": "Tea, Lemon, Sugar, Ice",
+                    "calories": 120,
+                    "protein": 0,
+                    "fats": 0,
+                    "carbs": 30,
+                    "diet_type": "Vegan",
+                    "cuisine": "Fusion",
+                    "price": 3.99,
+                    "description": "A zesty and refreshing lemon iced tea.",
+                    "meal_type": "Drink"
+                }
+            },
+            {
+                "model": "recommendation.dishes",
+                "pk": 27,
+                "fields": {
+                    "name": "Berry Smoothie",
+                    "ingredients": "Mixed Berries, Yogurt, Honey",
+                    "calories": 160,
+                    "protein": 4,
+                    "fats": 3,
+                    "carbs": 32,
+                    "diet_type": "Vegetarian",
+                    "cuisine": "Fusion",
+                    "price": 6.99,
+                    "description": "A nutritious smoothie packed with mixed berries.",
+                    "meal_type": "Drink"
+                }
+            },
+            {
+                "model": "recommendation.dishes",
+                "pk": 28,
+                "fields": {
+                    "name": "Mint Lemonade",
+                    "ingredients": "Lemon, Mint, Sugar, Water",
+                    "calories": 90,
+                    "protein": 0,
+                    "fats": 0,
+                    "carbs": 22,
+                    "diet_type": "Vegan",
+                    "cuisine": "Middle Eastern",
+                    "price": 3.99,
+                    "description": "A cooling drink with fresh mint and lemon.",
+                    "meal_type": "Drink"
+                }
+            },
+            {
+                "model": "recommendation.dishes",
+                "pk": 29,
+                "fields": {
+                    "name": "Espresso",
+                    "ingredients": "Coffee Beans, Water",
+                    "calories": 5,
+                    "protein": 0,
+                    "fats": 0,
+                    "carbs": 1,
+                    "diet_type": "Vegan",
+                    "cuisine": "Italian",
+                    "price": 2.49,
+                    "description": "A strong and aromatic espresso shot.",
+                    "meal_type": "Drink"
+                }
+            },
+            {
+                "model": "recommendation.dishes",
+                "pk": 30,
+                "fields": {
+                    "name": "Orange Juice",
+                    "ingredients": "Fresh Oranges",
+                    "calories": 120,
+                    "protein": 2,
+                    "fats": 0,
+                    "carbs": 28,
+                    "diet_type": "Vegan",
+                    "cuisine": "Fusion",
+                    "price": 4.49,
+                    "description": "A glass of freshly squeezed orange juice.",
+                    "meal_type": "Drink"
+                }
+            },
+            
+                {
+                    "model": "recommendation.dishes",
+                    "pk": 31,
+                    "fields": {
+                        "name": "Peach Iced Tea",
+                        "ingredients": "Tea, Peach Syrup, Ice",
+                        "calories": 110,
+                        "protein": 0,
+                        "fats": 0,
+                        "carbs": 28,
+                        "diet_type": "Vegan",
+                        "cuisine": "Fusion",
+                        "price": 3.99,
+                        "description": "A fruity and refreshing peach iced tea.",
+                        "meal_type": "Drink"
+                    }
+                },
+                {
+                    "model": "recommendation.dishes",
+                    "pk": 32,
+                    "fields": {
+                        "name": "Blueberry Muffin",
+                        "ingredients": "Flour, Blueberries, Sugar, Butter",
+                        "calories": 320,
+                        "protein": 5,
+                        "fats": 15,
+                        "carbs": 45,
+                        "diet_type": "Vegetarian",
+                        "cuisine": "American",
+                        "price": 2.99,
+                        "description": "A soft muffin bursting with fresh blueberries.",
+                        "meal_type": "Starter"
+                    }
+                },
+                {
+                    "model": "recommendation.dishes",
+                    "pk": 33,
+                    "fields": {
+                        "name": "Coconut Water",
+                        "ingredients": "Fresh Coconut",
+                        "calories": 45,
+                        "protein": 1,
+                        "fats": 0,
+                        "carbs": 10,
+                        "diet_type": "Vegan",
+                        "cuisine": "Tropical",
+                        "price": 3.49,
+                        "description": "Hydrating and naturally sweet coconut water.",
+                        "meal_type": "Drink"
+                    }
+                },
+                {
+                    "model": "recommendation.dishes",
+                    "pk": 34,
+                    "fields": {
+                        "name": "Grilled Halloumi Salad",
+                        "ingredients": "Halloumi, Lettuce, Cherry Tomatoes, Olive Oil",
+                        "calories": 300,
+                        "protein": 12,
+                        "fats": 22,
+                        "carbs": 8,
+                        "diet_type": "Vegetarian",
+                        "cuisine": "Mediterranean",
+                        "price": 9.99,
+                        "description": "A light and flavorful salad topped with grilled halloumi cheese.",
+                        "meal_type": "Starter"
+                    }
+                },
+                {
+                    "model": "recommendation.dishes",
+                    "pk": 35,
+                    "fields": {
+                        "name": "Chai Latte",
+                        "ingredients": "Black Tea, Milk, Spices, Sugar",
+                        "calories": 180,
+                        "protein": 5,
+                        "fats": 4,
+                        "carbs": 32,
+                        "diet_type": "Vegetarian",
+                        "cuisine": "Indian",
+                        "price": 4.99,
+                        "description": "A warm and aromatic chai latte made with traditional spices.",
+                        "meal_type": "Drink"
+                    }
+                },
+                {
+                    "model": "recommendation.dishes",
+                    "pk": 36,
+                    "fields": {
+                        "name": "Pineapple Smoothie",
+                        "ingredients": "Pineapple, Coconut Milk, Ice",
+                        "calories": 140,
+                        "protein": 2,
+                        "fats": 3,
+                        "carbs": 28,
+                        "diet_type": "Vegan",
+                        "cuisine": "Tropical",
+                        "price": 5.49,
+                        "description": "A creamy pineapple smoothie with a hint of coconut.",
+                        "meal_type": "Drink"
+                    }
+                },
+                {
+                    "model": "recommendation.dishes",
+                    "pk": 37,
+                    "fields": {
+                        "name": "Caprese Salad",
+                        "ingredients": "Tomatoes, Mozzarella, Basil, Olive Oil",
+                        "calories": 220,
+                        "protein": 9,
+                        "fats": 18,
+                        "carbs": 6,
+                        "diet_type": "Vegetarian",
+                        "cuisine": "Italian",
+                        "price": 8.99,
+                        "description": "A classic Italian salad with fresh tomatoes, mozzarella, and basil.",
+                        "meal_type": "Starter"
+                    }
+                },
+                {
+                    "model": "recommendation.dishes",
+                    "pk": 38,
+                    "fields": {
+                        "name": "Herbal Tea",
+                        "ingredients": "Herbal Leaves, Hot Water",
+                        "calories": 0,
+                        "protein": 0,
+                        "fats": 0,
+                        "carbs": 0,
+                        "diet_type": "Vegan",
+                        "cuisine": "Global",
+                        "price": 2.99,
+                        "description": "A calming and caffeine-free herbal infusion.",
+                        "meal_type": "Drink"
+                    }
+                },
+                {
+                    "model": "recommendation.dishes",
+                    "pk": 39,
+                    "fields": {
+                        "name": "Pumpkin Soup",
+                        "ingredients": "Pumpkin, Cream, Spices",
+                        "calories": 180,
+                        "protein": 4,
+                        "fats": 10,
+                        "carbs": 20,
+                        "diet_type": "Vegetarian",
+                        "cuisine": "American",
+                        "price": 6.49,
+                        "description": "A creamy and comforting pumpkin soup.",
+                        "meal_type": "Starter"
+                    }
+                },
+                {
+                    "model": "recommendation.dishes",
+                    "pk": 40,
+                    "fields": {
+                        "name": "Sparkling Water",
+                        "ingredients": "Carbonated Water",
+                        "calories": 0,
+                        "protein": 0,
+                        "fats": 0,
+                        "carbs": 0,
+                        "diet_type": "Vegan",
+                        "cuisine": "Global",
+                        "price": 1.99,
+                        "description": "A simple and refreshing sparkling water.",
+                        "meal_type": "Drink"
+                    }
+                },
+                
+                    {
+                        "model": "recommendation.dishes",
+                        "pk": 41,
+                        "fields": {
+                            "name": "Mango Lassi",
+                            "ingredients": "Mango, Yogurt, Sugar, Cardamom",
+                            "calories": 150,
+                            "protein": 4,
+                            "fats": 3,
+                            "carbs": 30,
+                            "diet_type": "Vegetarian",
+                            "cuisine": "Indian",
+                            "price": 4.99,
+                            "description": "A creamy and sweet mango yogurt drink.",
+                            "meal_type": "Drink"
+                        }
+                    },
+                    {
+                        "model": "recommendation.dishes",
+                        "pk": 42,
+                        "fields": {
+                            "name": "Greek Yogurt Parfait",
+                            "ingredients": "Greek Yogurt, Honey, Granola, Berries",
+                            "calories": 250,
+                            "protein": 10,
+                            "fats": 5,
+                            "carbs": 35,
+                            "diet_type": "Vegetarian",
+                            "cuisine": "Mediterranean",
+                            "price": 5.49,
+                            "description": "A layered parfait with yogurt, granola, and fresh berries.",
+                            "meal_type": "Starter"
+                        }
+                    },
+                    {
+                        "model": "recommendation.dishes",
+                        "pk": 43,
+                        "fields": {
+                            "name": "Espresso",
+                            "ingredients": "Coffee Beans, Water",
+                            "calories": 5,
+                            "protein": 0,
+                            "fats": 0,
+                            "carbs": 1,
+                            "diet_type": "Vegan",
+                            "cuisine": "Italian",
+                            "price": 2.99,
+                            "description": "A rich and bold shot of espresso.",
+                            "meal_type": "Drink"
+                        }
+                    },
+                    {
+                        "model": "recommendation.dishes",
+                        "pk": 44,
+                        "fields": {
+                            "name": "Bruschetta",
+                            "ingredients": "Bread, Tomatoes, Basil, Olive Oil",
+                            "calories": 180,
+                            "protein": 4,
+                            "fats": 8,
+                            "carbs": 22,
+                            "diet_type": "Vegetarian",
+                            "cuisine": "Italian",
+                            "price": 6.99,
+                            "description": "Toasted bread topped with a fresh tomato and basil mix.",
+                            "meal_type": "Starter"
+                        }
+                    },
+                    {
+                        "model": "recommendation.dishes",
+                        "pk": 45,
+                        "fields": {
+                            "name": "Berry Smoothie",
+                            "ingredients": "Mixed Berries, Almond Milk, Honey",
+                            "calories": 120,
+                            "protein": 2,
+                            "fats": 2,
+                            "carbs": 25,
+                            "diet_type": "Vegan",
+                            "cuisine": "Global",
+                            "price": 4.99,
+                            "description": "A refreshing and healthy berry smoothie.",
+                            "meal_type": "Drink"
+                        }
+                    },
+                    {
+                        "model": "recommendation.dishes",
+                        "pk": 46,
+                        "fields": {
+                            "name": "French Onion Soup",
+                            "ingredients": "Onions, Beef Broth, Cheese, Bread",
+                            "calories": 250,
+                            "protein": 8,
+                            "fats": 12,
+                            "carbs": 20,
+                            "diet_type": "Vegetarian",
+                            "cuisine": "French",
+                            "price": 7.49,
+                            "description": "A savory onion soup topped with melted cheese and bread.",
+                            "meal_type": "Starter"
+                        }
+                    },
+                    {
+                        "model": "recommendation.dishes",
+                        "pk": 47,
+                        "fields": {
+                            "name": "Lemonade",
+                            "ingredients": "Lemon Juice, Water, Sugar",
+                            "calories": 100,
+                            "protein": 0,
+                            "fats": 0,
+                            "carbs": 25,
+                            "diet_type": "Vegan",
+                            "cuisine": "American",
+                            "price": 3.49,
+                            "description": "A sweet and tangy homemade lemonade.",
+                            "meal_type": "Drink"
+                        }
+                    },
+                    {
+                        "model": "recommendation.dishes",
+                        "pk": 48,
+                        "fields": {
+                            "name": "Vegetable Spring Rolls",
+                            "ingredients": "Cabbage, Carrots, Spring Roll Wrappers, Soy Sauce",
+                            "calories": 180,
+                            "protein": 4,
+                            "fats": 5,
+                            "carbs": 30,
+                            "diet_type": "Vegan",
+                            "cuisine": "Asian",
+                            "price": 5.99,
+                            "description": "Crispy spring rolls filled with fresh vegetables.",
+                            "meal_type": "Starter"
+                        }
+                    },
+                    {
+                        "model": "recommendation.dishes",
+                        "pk": 49,
+                        "fields": {
+                            "name": "Mocha",
+                            "ingredients": "Espresso, Milk, Chocolate Syrup",
+                            "calories": 200,
+                            "protein": 6,
+                            "fats": 8,
+                            "carbs": 25,
+                            "diet_type": "Vegetarian",
+                            "cuisine": "Global",
+                            "price": 4.99,
+                            "description": "A creamy coffee with rich chocolate flavor.",
+                            "meal_type": "Drink"
+                        }
+                    },
+                    {
+                        "model": "recommendation.dishes",
+                        "pk": 50,
+                        "fields": {
+                            "name": "Chicken Satay",
+                            "ingredients": "Chicken, Peanut Sauce, Spices",
+                            "calories": 300,
+                            "protein": 25,
+                            "fats": 18,
+                            "carbs": 10,
+                            "diet_type": "High Protein",
+                            "cuisine": "Asian",
+                            "price": 8.99,
+                            "description": "Grilled chicken skewers served with a creamy peanut sauce.",
+                            "meal_type": "Starter"
+                        }
+                    }  
+    
+]

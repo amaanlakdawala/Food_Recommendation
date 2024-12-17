@@ -1,0 +1,45 @@
+/* RestaurantFeatures.css */
+.restaurant-features {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    width: 100%; /* Ensures full width */
+    box-sizing: border-box;
+  }
+  
+  .restaurant-features h2 {
+    color: #c49871; /* Gold-like color */
+    font-family: 'Cormorant', serif;
+  }
+  
+  .feature-item {
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    color: #c49871;
+  }
+  
+  .feature-title {
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    font-family: 'Cormorant', serif;
+    line-height: 1.5;
+  }
+
+  .feature-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+  }
+  
+
+
+
+

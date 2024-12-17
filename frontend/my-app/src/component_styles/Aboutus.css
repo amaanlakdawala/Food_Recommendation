@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+
+/* HomePage.css */
+.hero-section .title {
+    font-family: 'Playfair Display', serif; /* Adjust font-family */
+    font-size: 4rem; /* Increase size for emphasis */
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section .subtitle {
+    font-family: 'Roboto', sans-serif; /* Secondary font */
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #FFFFFF;
+  }
+  
+  .hero-section {
+    margin-bottom: 50px; /* Add spacing between the text and the image grid */
+    text-align: center; /* Center-align text */
+}
+
+.homepage2 {
+    background: url('https://images.pexels.com/photos/5490965/pexels-photo-5490965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+    color: #FFFFFF;
+    min-height: 50vh;
+    padding: 50px 0;
+  }
+
+
+  h2 {
+    font-family: 'Georgia', serif; /* Elegant font */
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #e0e0e0;
+  }
+  .container-custom {
+    background-color: #002b20;
+    color: #fff;
+    padding: 50px;
+  }
+  
+  .image-rounded {
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .text-light {
+    color: #d3d3d3;
+  }
+  
+  .shadow-rounded {
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 300px;
+  }
+  .image-hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image-hover-effect:hover {
+    transform: scale(1.05); /* Slightly scale up the image */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6); /* Increase shadow */
+  }
+    

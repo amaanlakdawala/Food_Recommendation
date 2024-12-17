@@ -1,0 +1,78 @@
+.custom-navbar {
+   /* Dark green background */
+    font-family: 'Serif'; /* Use a serif font for elegant styling */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px; /* Add padding for spacing */
+    margin-bottom: 40px;
+  }
+  
+  .brand-logo {
+    font-family: 'Lucida Calligraphy', cursive;
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+    margin-right: auto; /* Push the logo to the left */
+  }
+  
+  .brand-text {
+    font-size: 30px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: space-around; /* Center menu items */
+    gap: 30px; /* Add space between menu items */
+    margin-left: 220px;
+  }
+  
+  .nav-link {
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative; /* Required for the pseudo-element */
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    bottom: -3px; /* Position below the text */
+    left: 0;
+    background-color: #c49871; /* Animation color */
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+  }
+  
+  .nav-link:hover::after {
+    width: 100%; /* Expand underline on hover */
+  }
+  
+  .nav-link:hover {
+    color: #f8f9fa; /* Optional: Slightly lighter color on hover */
+  }
+  
+  
+  .book-table-btn {
+    
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: auto; /* Push the button to the right */
+  }
+  
+  .book-table-btn:hover {
+    background-color: #ffffff;
+    color: #c49871;
+    border: 2px solid #c49871;
+  }
+  .book_table_button_link{
+    text-decoration: none;
+    color: #c49871;
+  }
+  

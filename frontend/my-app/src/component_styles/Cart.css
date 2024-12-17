@@ -1,0 +1,156 @@
+.custom-table {
+    background-color: #0d2c26;
+    color: #fff;
+  }
+
+  
+  
+  .custom-table thead {
+    background-color: #0d2c26;
+  }
+  
+  .custom-table th, .custom-table td {
+    background-color: #0d2c26 !important;
+    color: #fff;
+    width: 20%;
+  }
+
+  .apply-coupon-btn {
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* White text */
+    border: 1px solid #b6a97a; /* Border with golden color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 17px; /* Spacing inside the button */
+    font-size: 13px; /* Text size */
+     /* Bold text */
+    text-transform: uppercase; /* Capitalize all letters */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .apply-coupon-btn:hover {
+    background-color: #b6a97a; /* Change background color on hover */
+    color: #002b20; /* Change text color on hover */
+  }
+
+  .quantity_button{
+    position: relative;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border: 1px solid #72796f;
+    padding-left: 20px;
+    height: 50px;
+    width: 500px;
+    max-width: 100%;
+    display: flex;
+color: white;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+  .cart-totals {
+    background-color: #0d2c26;
+    color: #fff;
+    padding: 20px;
+    width: 40%; /* Ensures full width */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Includes padding in width */
+  }
+  
+  .cart-totals-heading {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: left; /* Align heading to the left */
+  }
+  
+  .cart-totals-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .cart-totals-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .cart-totals-value {
+    font-size: 14px;
+  }
+  
+  .cart-totals-divider {
+    border: none;
+    border-top: 1px solid #b6a97a;
+    margin: 10px 0;
+    width: 90vw; /* Full width of the viewport */
+    position: relative; /* Ensures it stays inside the section */
+    left: -50vw; /* Offset the position to start from the screen edge */
+    transform: translateX(50%); /* Center the divider */
+  }
+  
+  
+  .cart-totals-shipping {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left; /* Align shipping text to the left */
+  }
+  
+  .calculate-shipping {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .calculate-shipping:hover {
+    text-decoration: none;
+  }
+  
+  .checkout-button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #b6a97a;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 50%; /* Full-width button */
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .checkout-button:hover {
+    background-color: #b6a97a; /* Change background color on hover */
+    color: #002b20; /* Change text color on hover */
+  }
+
+
+
+  .cart-divider{
+    border: none;
+    border-top: 2px solid #b6a97a;
+    margin: 10px 0;
+    width: 99vw; /* Full width of the viewport */
+    position: relative; /* Ensures it stays inside the section */
+    left: -50vw; /* Offset the position to start from the screen edge */
+    transform: translateX(50%); /* Center the divider */
+  }
+  

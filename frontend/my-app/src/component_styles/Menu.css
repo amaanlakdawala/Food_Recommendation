@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+
+/* HomePage.css */
+.hero-section .title {
+    font-family: 'Playfair Display', serif; /* Adjust font-family */
+    font-size: 4rem; /* Increase size for emphasis */
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section .subtitle {
+    font-family: 'Roboto', sans-serif; /* Secondary font */
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #FFFFFF;
+  }
+  
+  .hero-section {
+    margin-bottom: 50px; /* Add spacing between the text and the image grid */
+    text-align: center; /* Center-align text */
+}
+
+.homepage1 {
+    background: url('https://images.pexels.com/photos/19362401/pexels-photo-19362401/free-photo-of-man-holding-to-a-pepper-and-salt-shakers-looking-at-the-large-steak-in-front-of-him.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+    color: #FFFFFF;
+    min-height: 100vh;
+    padding: 50px 0;
+  }

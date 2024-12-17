@@ -1,0 +1,110 @@
+.product-page {
+    margin: 2rem 0;
+    color: #e5e5e5;
+    
+    padding: 2rem;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .image-gallery .thumbnail img {
+    width: 600px;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image is cropped to fit within the height */
+    border-radius: 8px;
+    border: 2px solid #333;
+}
+
+  
+  .product-details h1 {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  .product-details .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4af37;
+  }
+  
+  .product-details .rating {
+    margin: 0.5rem 0;
+    color: #ffcc00;
+  }
+  
+  .product-details .description {
+    margin: 1rem 0;
+    color: #aaa;
+  }
+  
+  .quantity-form {
+    margin-bottom: 1rem;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .quantity-controls input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #d4af37;
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .add-to-cart-btn:hover{
+    background-color: white;
+    color: #d4af37;
+  }
+  
+  .additional-info p {
+    margin: 0.5rem 0;
+    color: #ccc;
+    margin-top: 10px;
+  }
+  
+  .additional-info strong {
+    color: #fff;
+  }
+
+
+  .nutritional-info {
+    margin-top: 2rem;
+    color: #e5e5e5;
+  }
+  
+  .nutritional-info h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .nutritional-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nutritional-info li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .nutritional-info strong {
+    color: #d4af37;
+  }
+  
