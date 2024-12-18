@@ -1,14 +1,95 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Table, Button, Form } from 'react-bootstrap';
 import RestaurantNavbar from './RestaurantNavbar';
 import '../component_styles/Cart.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, updateCartQuantity } from '../redux/store';
+import axios from "axios";
 
 function Cart() {
   const [quantities, setQuantities] = useState({});
   const dispatch = useDispatch();
+  const recommendedItems = useSelector((state) => state.cart.recommended_items);
   const cartItems = useSelector((state) => state.cart.items);
+  const [orderId, setOrderId] = useState(null);
+  const [total, setTotal] = useState(0);
+ 
+
+
+  // useEffect(()=>{
+  //   const getRecommendedDishes = async ()=>{
+  //     try{
+  //       const response = await axios.get('/api/recommend_dishes/')
+      
+  //       setRecommendedDishes(response.data)
+  //       console.log(recommendedDishes)
+
+  //     }
+  //     catch{
+  //       console.log("Error");
+  //     }
+  //   }
+  //   getRecommendedDishes()
+  // },[])
+
+  useEffect(() => {
+    // Fetch order details from backend
+    fetch("/api/create-order")
+      .then((res) => res.json())
+      .then((data) => {
+        setOrderId(data.order_id);
+        setTotal(data.amount / 100); // Convert paise to ₹ for display
+      })
+      .catch((error) => console.error("Error creating order:", error));
+      console.log(recommendedItems)
+  }, []);
+
+
+  const handleRazorpayPayment = () => {
+    if (!orderId) {
+      alert("Order ID not found. Please try again.");
+      return;
+    }
+
+    const options = {
+      key: "rzp_test_mv5IZmGRDYEyR3", // Razorpay Key ID
+      amount: total * 100, // Amount in paise
+      currency: "INR",
+      name: "Acme Corp",
+      description: "Test Transaction",
+      image: "https://example.com/your_logo", // Add your logo here
+      order_id: orderId, // Pass the `order_id` generated from backend
+      handler: function (response) {
+        // Handle successful payment
+        alert("Payment Successful!");
+        console.log(response);
+        // Redirect to success page
+        window.location.href = "http://localhost:5173/cart";
+      },
+      prefill: {
+        name: "John Doe", // User's name
+        email: "john.doe@example.com", // User's email
+        contact: "9892662324", // User's phone number
+      },
+      
+      theme: {
+        color: "#3399cc",
+      },
+    };
+
+    const rzp1 = new window.Razorpay(options);
+
+    rzp1.on("payment.failed", function (response) {
+      alert("Payment failed. Please try again.");
+      console.error(response.error);
+    });
+
+    rzp1.open();
+  };
+
+  
+  
+
   const calculateTotal = () => {
     return cartItems.reduce((total, item) => {
       const itemQuantity = quantities[item.id] || 1;
@@ -215,7 +296,9 @@ function Cart() {
           <span className="cart-totals-value">${calculateTotal()}</span>
         </div>
         <hr className="cart-totals-divider" />
-        <button className="checkout-button">Proceed to Checkout</button>
+      <button className="checkout-button" onClick={handleRazorpayPayment}>
+        Proceed to Checkout
+      </button>
       </div>
     </>
   );

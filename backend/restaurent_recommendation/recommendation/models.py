@@ -28,7 +28,7 @@ class Dishes(models.Model):
     
 class DishImage(models.Model):
     dish = models.ForeignKey(Dishes, on_delete=models.CASCADE, related_name='images')
-    image = models.ImageField(upload_to='dishes/')
+    image = models.ImageField(upload_to='dishes/',default='backend\restaurent_recommendation\media\dishes\camel_steak1.jpg')
 
     def __str__(self):
         return f"Image for {self.dish.name}"

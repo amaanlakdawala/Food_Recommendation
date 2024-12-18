@@ -6,19 +6,36 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart } from '../redux/store';
+import { addToCart, addRecommendedItems} from '../redux/store';
 
 function ProductDetail() {
   const dispatch = useDispatch();
+  
   const { id } = useParams();
+  
   const [productData, setProductData] = useState(null); // Initialize as null for a proper check
   
   
+  const sendCartItem = async () => {
+    try {
+      const response = await axios.post('/api/recommend_dishes/', { name: productData.name }); 
+      if (response) {
+        console.log('Got the response:', response.data);
+        dispatch(addRecommendedItems(response.data))
+        
+      } else {
+        console.log('No response received');
+      }
+    } catch (error) {
+      console.error('Error sending cart item:', error);
+    }
+  };
 
   const addProduct = ()=>{
    dispatch(addToCart(productData))
    console.log("product added")
-   console.log(productData)
+   console.log(productData.name)
+   sendCartItem()
   }
   
 

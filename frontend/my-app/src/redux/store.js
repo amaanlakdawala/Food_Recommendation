@@ -3,12 +3,17 @@ import { configureStore, createSlice } from '@reduxjs/toolkit';
 const cartSlice = createSlice({
     name: 'cart',
     initialState: {
-      items: [], // Array to hold cart items
+      items: [],
+       // Array to hold cart items
+       recommended_items: [],
     },
     reducers: {
       addToCart: (state, action) => {
         // Add new product to the cart
         state.items.push(action.payload);
+      },
+      addRecommendedItems: (state,action)=>{
+        state.recommended_items.push(action.payload)
       },
       removeFromCart: (state, action) => {
         // Remove product by ID
@@ -28,7 +33,7 @@ const cartSlice = createSlice({
     },
   });
 
-  export const { addToCart, removeFromCart, clearCart,updateCartQuantity } = cartSlice.actions;
+  export const { addToCart, removeFromCart, clearCart,updateCartQuantity, addRecommendedItems } = cartSlice.actions;
 
 // Step 3: Configure the store
 const store = configureStore({

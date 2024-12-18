@@ -45,7 +45,11 @@ function Search() {
             {filteredItems.map((item, index) => (
               <Col md={6} lg={6} key={index} className="mb-4">
                 <Card className="menu-item-box">
-                <Link to={`/productDetail/${item.id}`}><Card.Img variant="top" src={`http://127.0.0.1:8000/${item.images[0].image}`} alt={item.name} /></Link>  
+                <Link to={`/productDetail/${item.id}`}><Card.Img variant="top" src={
+                item.images && item.images.length > 0 
+                  ? `http://127.0.0.1:8000/${item.images[0].image}` 
+                  : 'https://images.pexels.com/photos/5499120/pexels-photo-5499120.jpeg?auto=compress&cs=tinysrgb&w=600' // Fallback image URL
+              }  alt={item.name} /></Link>  
                   <Card.Body>
                     <h5 className="menu-title">{item.name}</h5>
                     <p className="menu-price">${item.price}</p>

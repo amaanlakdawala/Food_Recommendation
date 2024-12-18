@@ -7,7 +7,10 @@ react-bootstrap bootstrap
 axios
 django-cors-headers
 @reduxjs/toolkit react-redux
-
+pandas 
+spacy
+spacy download en_core_web_md
+razorpay
 
 
 # imporvement make redux store to display menu itemws and search component items

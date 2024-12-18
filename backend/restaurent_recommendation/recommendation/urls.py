@@ -12,6 +12,8 @@ urlpatterns = [
     path('get_dish/<int:pk>/',get_dish,name='get_dish'),
     path('get_menu/',get_menu,name='get_menu'),
     path('book_table/',booktable,name='book_table'),
+    path('recommend_dishes/',recommend_dishes,name='recommend_dishes'),
+    path('create-order/',create_order,name='create-order')
    
 
 ]
